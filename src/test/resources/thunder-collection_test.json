@@ -1,0 +1,87 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "azure",
+    "dateExported": "2023-08-15T00:03:01.385Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a98610cd-5eb7-49ce-a266-29873cbc4a0a",
+            "colId": "58332f6c-9780-434d-9a77-c8b0a0766585",
+            "containerId": "",
+            "name": "http://localhost:7071/api/HttpTriggerJava1?test=test",
+            "url": "http://localhost:7071/api/HttpTriggerJava1?name=test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-13T10:53:59.125Z",
+            "modified": "2023-08-13T10:53:59.125Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "test",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bb1d444d-6c34-46ef-ae06-24e2faf3d5db",
+            "colId": "58332f6c-9780-434d-9a77-c8b0a0766585",
+            "containerId": "",
+            "name": "https://test-server?name=test",
+            "url": "http://test-server/api/HttpTriggerJava1?name=test",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-13T10:53:59.126Z",
+            "modified": "2023-08-13T10:53:59.126Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "test",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3620ad24-9f1c-4560-88e5-994f2b3f5e83",
+            "colId": "58332f6c-9780-434d-9a77-c8b0a0766585",
+            "containerId": "",
+            "name": "http://localhost:7071/api/HttpTriggerJavaToEventHub",
+            "url": "http://localhost:7071/api/HttpTriggerJavaToEventHub",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-14T23:16:44.003Z",
+            "modified": "2023-08-14T23:20:39.054Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Test message\",\n  \"description\": \"Today is a nice day\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "479d0008-41ee-436d-a121-5f0449d86d5f",
+            "colId": "58332f6c-9780-434d-9a77-c8b0a0766585",
+            "containerId": "",
+            "name": "https://test-server?name=test Copy Copy",
+            "url": "http://test-server/api/HttpTriggerJavaToEventHub",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-14T23:20:21.405Z",
+            "modified": "2023-08-14T23:20:21.405Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Test message\",\n  \"description\": \"Today is a nice day\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

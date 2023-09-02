@@ -26,7 +26,7 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="HTTP Client" secondary="true" icon="AllIcons.CodeWithMe.CwmFullSync" anchor="right"
-                    factoryClass="com.mmaracic.httpclient.HttpClientToolWindowFactory"/>
+                    factoryClass="com.mmaracic.httpclient.ui.HttpClientToolWindowFactory"/>
 
     </extensions>
 </idea-plugin>
