@@ -20,9 +20,11 @@ class HttpCollectionUtils {
         }
 
         fun fromFile(path: String, objectMapper: ObjectMapper): HttpClientCollection {
-            val content = String(this::class.java.getResourceAsStream(path)?.readAllBytes()!!)
+            val content = readFile(path)
             return objectMapper.readValue(content, HttpClientCollection::class.java)
         }
+
+        fun readFile(path: String): String = String(this::class.java.getResourceAsStream(path)?.readAllBytes()!!)
 
         fun toJson(objectMapper: ObjectMapper, collection: HttpClientCollection): String {
             return objectMapper.writeValueAsString(collection)

@@ -3,10 +3,6 @@ package com.mmaracic.httpclient.util
 import com.mmaracic.httpclient.model.HttpBodyType
 import com.mmaracic.httpclient.model.HttpMethod
 import org.junit.Assert
-import org.junit.jupiter.api.Disabled
-import java.time.LocalDateTime
-import java.time.OffsetDateTime
-import java.time.ZoneOffset
 import kotlin.test.Test
 
 class HttpCollectionUtilsTest {
@@ -34,17 +30,6 @@ class HttpCollectionUtilsTest {
             "{\n  \"title\": \"Test message\",\n  \"description\": \"Today is a nice day\"\n}",
             collection.requests[3].body?.raw
         )
-    }
-
-    @Test
-    @Disabled("Work in progress")
-    fun `test-deserializing-postman-collection`() {
-        val objectMapper = HttpCollectionUtils.getObjectMapper()
-        val path = "/postman-collection-v2.json"
-
-        val collection = HttpCollectionUtils.fromFile(path, objectMapper)
-        Assert.assertNotNull(collection)
-        Assert.assertEquals(4, collection.requests.size)
     }
 
     @Test
